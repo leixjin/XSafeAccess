@@ -21,6 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		ABFE46731D62F7930033F7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFE46721D62F7930033F7D4 /* LaunchScreen.storyboard */; };
 		B6F7B4D7FFFBF6E7C74258A5 /* Pods_XSafeAccess_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C16144353C7F94F923115C /* Pods_XSafeAccess_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		83C5F9F0C086E3438CE9CAE4 /* Pods-XSafeAccess_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSafeAccess_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XSafeAccess_Example/Pods-XSafeAccess_Example.release.xcconfig"; sourceTree = "<group>"; };
 		859F89F6C4B7DAA78784843E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ABFE46721D62F7930033F7D4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADD314AF98CC9FFBB521EF3A /* XSafeAccess.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XSafeAccess.podspec; path = ../XSafeAccess.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 				6003F59C195388D20070C39A /* XSafeAccessAppDelegate.h */,
 				6003F59D195388D20070C39A /* XSafeAccessAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				ABFE46721D62F7930033F7D4 /* LaunchScreen.storyboard */,
 				6003F5A5195388D20070C39A /* XSafeAccessViewController.h */,
 				6003F5A6195388D20070C39A /* XSafeAccessViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				ABFE46731D62F7930033F7D4 /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -456,10 +460,10 @@
 			baseConfigurationReference = 6D7C921A188F946981A83CCC /* Pods-XSafeAccess_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XSafeAccess/XSafeAccess-Prefix.pch";
 				INFOPLIST_FILE = "XSafeAccess/XSafeAccess-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,10 +476,10 @@
 			baseConfigurationReference = 83C5F9F0C086E3438CE9CAE4 /* Pods-XSafeAccess_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XSafeAccess/XSafeAccess-Prefix.pch";
 				INFOPLIST_FILE = "XSafeAccess/XSafeAccess-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
