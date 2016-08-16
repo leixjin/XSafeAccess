@@ -8,7 +8,10 @@
 
 #import "XSafeAccessViewController.h"
 
-@interface XSafeAccessViewController ()
+@interface XSafeAccessViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *reasonArray;
 
 @end
 
@@ -16,14 +19,58 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([self class])];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.reasonArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([self class])];
+    cell.textLabel.text = self.reasonArray[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-    
-    NSArray *array = @[];
-    
-    [array objectAtIndex:98];
+    switch (indexPath.row) {
+        case 0:{
+            NSArray *array = @[];
+            [array objectAtIndex:98];
+        }
+            break;
+            
+        case 1:{
+            NSArray *array = @[@"科科"];
+            [array objectAtIndex:98];
+        }
+            break;
+            
+        case 2:{
+            NSMutableArray *arrayM = @[@"科科"].mutableCopy;
+            [arrayM objectAtIndex:98];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (NSArray *)reasonArray {
+    if (!_reasonArray) {
+        _reasonArray = @[@"不可变空数组越界", @"不可变数组越界", @"可变数组越界"];
+    }
+    return _reasonArray;
 }
 
 @end
