@@ -62,7 +62,7 @@
 		859F89F6C4B7DAA78784843E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ABFE46721D62F7930033F7D4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ADD314AF98CC9FFBB521EF3A /* XSafeAccess.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XSafeAccess.podspec; path = ../XSafeAccess.podspec; sourceTree = "<group>"; };
+		ADD314AF98CC9FFBB521EF3A /* XSafeAccess.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XSafeAccess.podspec; path = ../XSafeAccess.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

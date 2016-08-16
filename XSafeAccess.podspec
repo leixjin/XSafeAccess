@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'XSafeAccess'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of XSafeAccess.'
+  s.summary          = 'Protect your array.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,13 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                       A simple tool to protect your array.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/XSafeAccess'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/xiaolei0808/XSafeAccess'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'xiaolei.jin' => 'jinxiaolei@le.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/XSafeAccess.git', :tag => s.version.to_s }
+  s.author           = { 'xiaolei.jin' => 'me.xiaolei0808@gmail.com' }
+  s.source           = { :git => 'https://github.com/xiaolei0808/XSafeAccess.git', :tag => s.version.to_s }
 
   s.social_media_url = 'https://twitter.com/xiaolei0808'
 
