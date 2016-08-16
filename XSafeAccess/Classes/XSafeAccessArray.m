@@ -4,6 +4,7 @@
 //
 //  Created by 金小白 on 16/8/16.
 //
+//  Copyright © 2016年 Xiaolei.Jin. All rights reserved.
 
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
@@ -39,7 +40,7 @@
     });
 }
 
-- (id)safeObjectAtIndexI:(NSInteger)index {
+- (id)safeObjectAtIndexI:(NSUInteger)index {
     if (index < self.count) {
         return [self safeObjectAtIndexI:index];
     }else {
@@ -48,7 +49,7 @@
     }
 }
 
-- (id)safeObjectAtIndex0:(NSInteger)index {
+- (id)safeObjectAtIndex0:(NSUInteger)index {
     if (index < self.count) {
         return [self safeObjectAtIndex0:index];
     }else {
@@ -68,7 +69,7 @@
     });
 }
 
-- (id)safeObjectAtIndexM:(NSInteger)index {
+- (id)safeObjectAtIndexM:(NSUInteger)index {
     if (index < self.count) {
         return [self safeObjectAtIndexM:index];
     }else {
