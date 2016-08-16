@@ -4,8 +4,7 @@ target 'XSafeAccess_Example' do
   pod 'XSafeAccess', :path => '../'
 
   target 'XSafeAccess_Tests' do
-    inherit! :search_paths
-
-    
+  # inherit! :search_paths
+  
   end
 end

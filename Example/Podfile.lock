@@ -1,0 +1,14 @@
+PODS:
+  - XSafeAccess (0.1.0)
+
+DEPENDENCIES:
+  - XSafeAccess (from `../`)
+
+EXTERNAL SOURCES:
+  XSafeAccess:
+    :path: ../
+
+SPEC CHECKSUMS:
+  XSafeAccess: 603c7f3bd1cc596d4c8804d873dac74c37aa2243
+
+COCOAPODS: 0.39.0
