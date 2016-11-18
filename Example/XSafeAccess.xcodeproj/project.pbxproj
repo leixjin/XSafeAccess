@@ -239,6 +239,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = xiaolei.jin;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 44XRSSJK6E;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -460,6 +463,7 @@
 			baseConfigurationReference = 6D7C921A188F946981A83CCC /* Pods-XSafeAccess_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44XRSSJK6E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XSafeAccess/XSafeAccess-Prefix.pch";
 				INFOPLIST_FILE = "XSafeAccess/XSafeAccess-Info.plist";
@@ -476,6 +480,7 @@
 			baseConfigurationReference = 83C5F9F0C086E3438CE9CAE4 /* Pods-XSafeAccess_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44XRSSJK6E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XSafeAccess/XSafeAccess-Prefix.pch";
 				INFOPLIST_FILE = "XSafeAccess/XSafeAccess-Info.plist";

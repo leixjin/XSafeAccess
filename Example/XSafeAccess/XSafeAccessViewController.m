@@ -60,6 +60,21 @@
             [arrayM objectAtIndex:98];
         }
             break;
+        case 3:{
+            NSMutableArray *arrayM = @[@"",@""].mutableCopy;
+            [arrayM insertObject:@"xxx" atIndex:3];
+        }
+            break;
+        case 4:{
+            NSMutableArray *arrayM = @[].mutableCopy;
+            [arrayM removeObjectAtIndex:0];
+        }
+            break;
+        case 5:{
+            NSMutableArray *arrayM = @[].mutableCopy;
+            [arrayM replaceObjectAtIndex:0 withObject:@""];
+        }
+            break;
             
         default:
             break;
@@ -68,7 +83,7 @@
 
 - (NSArray *)reasonArray {
     if (!_reasonArray) {
-        _reasonArray = @[@"不可变空数组越界", @"不可变数组越界", @"可变数组越界"];
+        _reasonArray = @[@"不可变空数组越界", @"不可变数组越界", @"可变数组越界", @"可变数组插入保护", @"可变数组移除保护", @"可变数组替换保护"];
     }
     return _reasonArray;
 }
