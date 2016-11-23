@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'XSafeAccess'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'Protect your array.'
 
   s.description      = <<-DESC
@@ -11,10 +11,8 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'xiaolei.jin' => 'me.xiaolei0808@gmail.com' }
   s.source           = { :git => 'https://github.com/xiaolei0808/XSafeAccess.git', :tag => s.version.to_s }
-
-#s.social_media_url = 'https://twitter.com/xiaolei0808'
-
+  s.requires_arc     = false
   s.ios.deployment_target = '7.0'
-
   s.source_files = 'XSafeAccess/Classes/**/*'
+  
 end

@@ -1,5 +1,5 @@
 PODS:
-  - XSafeAccess (0.1.0)
+  - XSafeAccess (0.0.3)
 
 DEPENDENCIES:
   - XSafeAccess (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  XSafeAccess: 8cea8531f1f89193f151b3a85437987eae661c3e
+  XSafeAccess: 75ae645a6ce0357bbf7daa0e519beb8c690a2f4b
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 6818c080db38c341bfcc5efae5c8152ee1d14a40
+
+COCOAPODS: 1.0.0
