@@ -4,6 +4,8 @@
 
 osx_image: xcode9
 language: objective-c
+xcode_workspace: XSafeAccess.xcworkspace
+xcode_scheme: XSafeAccess
 # cache: cocoapods
 # podfile: Example/Podfile
 # before_install:
@@ -11,4 +13,4 @@ language: objective-c
 # - pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild test -workspace Example/XSafeAccess.xcworkspace -scheme XSafeAccess-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+# - pod lib lint
