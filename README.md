@@ -1,6 +1,6 @@
 # XSafeAccess
 
-[![CI Status](http://img.shields.io/travis/xiaolei.jin/XSafeAccess.svg?style=flat)](https://travis-ci.org/xiaolei.jin/XSafeAccess)
+[![Build Status](https://travis-ci.org/xiaolei0808/XSafeAccess.svg?branch=master)](https://travis-ci.org/xiaolei0808/XSafeAccess)
 [![Version](https://img.shields.io/cocoapods/v/XSafeAccess.svg?style=flat)](http://cocoapods.org/pods/XSafeAccess)
 [![License](https://img.shields.io/cocoapods/l/XSafeAccess.svg?style=flat)](http://cocoapods.org/pods/XSafeAccess)
 [![Platform](https://img.shields.io/cocoapods/p/XSafeAccess.svg?style=flat)](http://cocoapods.org/pods/XSafeAccess)
