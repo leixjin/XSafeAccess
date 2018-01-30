@@ -8,10 +8,10 @@ xcode_workspace: XSafeAccess.xcworkspace
 xcode_scheme: XSafeAccess
 
 cache: cocoapods
-podfile: XSafeAccess/Podfile
+podfile: Example/Podfile
 before_install:
 - gem install cocoapods # Since Travis is not always on latest version
-- pod install --project-directory=XSafeAccess
+- pod install --project-directory=Example
 
 script:
 - set -o pipefail && xcodebuild test -workspace Example/XSafeAccess.xcworkspace -scheme XSafeAccess-Example | xcpretty
