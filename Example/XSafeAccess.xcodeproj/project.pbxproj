@@ -203,12 +203,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "XSafeAccess_Example" */;
 			buildPhases = (
+				96E1E75BF5459E0A6DB84A16 /* [CP] Check Pods Manifest.lock */,
 				187C0A1D838AB9D952488C42 /* 📦 Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				BDCC814B750C8413350C848A /* 📦 Embed Pods Frameworks */,
-				BCCD2A56FE2EC465FE9301E5 /* 📦 Copy Pods Resources */,
+				C5991C402571534004E17862 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,12 +224,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "XSafeAccess_Tests" */;
 			buildPhases = (
+				D119B9838CB806DEB90303F1 /* [CP] Check Pods Manifest.lock */,
 				DD37B92338613EED1758FB3C /* 📦 Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				83616823AE94BA662ACE5CB5 /* 📦 Embed Pods Frameworks */,
-				573B38A530C8AC02F234EECA /* 📦 Copy Pods Resources */,
+				7934BF42173B1880192C247C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,19 +317,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		573B38A530C8AC02F234EECA /* 📦 Copy Pods Resources */ = {
+		7934BF42173B1880192C247C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XSafeAccess_Example-XSafeAccess_Tests/Pods-XSafeAccess_Example-XSafeAccess_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XSafeAccess/XSafeAccess.framework",
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XSafeAccess.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSafeAccess_Example-XSafeAccess_Tests/Pods-XSafeAccess_Example-XSafeAccess_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSafeAccess_Example-XSafeAccess_Tests/Pods-XSafeAccess_Example-XSafeAccess_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		83616823AE94BA662ACE5CB5 /* 📦 Embed Pods Frameworks */ = {
@@ -345,19 +350,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSafeAccess_Example-XSafeAccess_Tests/Pods-XSafeAccess_Example-XSafeAccess_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BCCD2A56FE2EC465FE9301E5 /* 📦 Copy Pods Resources */ = {
+		96E1E75BF5459E0A6DB84A16 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XSafeAccess_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSafeAccess_Example/Pods-XSafeAccess_Example-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BDCC814B750C8413350C848A /* 📦 Embed Pods Frameworks */ = {
@@ -373,6 +381,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSafeAccess_Example/Pods-XSafeAccess_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5991C402571534004E17862 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XSafeAccess_Example/Pods-XSafeAccess_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XSafeAccess/XSafeAccess.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XSafeAccess.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSafeAccess_Example/Pods-XSafeAccess_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D119B9838CB806DEB90303F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XSafeAccess_Example-XSafeAccess_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD37B92338613EED1758FB3C /* 📦 Check Pods Manifest.lock */ = {

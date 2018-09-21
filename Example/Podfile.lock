@@ -6,11 +6,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   XSafeAccess:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  XSafeAccess: 75ae645a6ce0357bbf7daa0e519beb8c690a2f4b
+  XSafeAccess: 4a4c8f3379127cca972a5332a721637f65e22b98
 
 PODFILE CHECKSUM: 6818c080db38c341bfcc5efae5c8152ee1d14a40
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.5.0
